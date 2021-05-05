@@ -1,11 +1,11 @@
 {
-  "timeStamp": 1620181831227,
+  "timeStamp": 1620182453256,
   "version": "1.34.0",
   "userSettings": {
     "advancedUserEnabled": true,
     "cloudStorageEnabled": true,
     "dynamicFilteringEnabled": true,
-    "externalLists": "https://anti-ad.net/easylist.txt\nhttps://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt\nhttps://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt\nhttps://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt\nhttps://neodev.team/lite_adblocker\nhttps://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt\nhttps://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt\nhttps://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt\nhttps://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt\nhttps://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt\nhttps://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt\nhttps://sub.adtchrome.com/adt-chinalist-easylist360.txt\nhttps://www.i-dont-care-about-cookies.eu/abp/",
+    "externalLists": "https://anti-ad.net/easylist.txt\nhttps://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt\nhttps://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt\nhttps://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt\nhttps://neodev.team/lite_adblocker\nhttps://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt\nhttps://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt\nhttps://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt\nhttps://sub.adtchrome.com/adt-chinalist-easylist360.txt\nhttps://www.i-dont-care-about-cookies.eu/abp/",
     "importedLists": [
       "https://anti-ad.net/easylist.txt",
       "https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt",
@@ -28,9 +28,12 @@
     "ublock-privacy",
     "ublock-abuse",
     "ublock-unbreak",
+    "adguard-generic",
     "easylist",
+    "adguard-spyware",
     "easyprivacy",
     "urlhaus-1",
+    "spam404-0",
     "adguard-annoyance",
     "adguard-social",
     "fanboy-thirdparty_social",
