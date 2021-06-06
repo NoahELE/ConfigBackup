@@ -1,10 +1,10 @@
+set nocompatible " set not compatible with vi
+let $LANG='en' " set message language
+set langmenu=en " set menu's language of gvim. no spaces beside '='
+
 " use win shortcurts
 source $VIMRUNTIME/mswin.vim
 behave mswin
-
-set nocompatible " set not compatible with vi
-let $LANG='en'  " set message language
-set langmenu=en   " set menu's language of gvim. no spaces beside '='
 
 " vim-plug
 call plug#begin('~/.vim/plugged')

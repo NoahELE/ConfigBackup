@@ -1,13 +1,13 @@
+set nocompatible " set not compatible with vi
+let $LANG='en' " set message language
+set langmenu=en " set menu's language of gvim. no spaces beside '='
+
 " Vim with all enhancements
 source $VIMRUNTIME/vimrc_example.vim
 
 " use win shortcuts
 source $VIMRUNTIME/mswin.vim
 behave mswin
-
-set nocompatible " set not compatible with vi
-let $LANG='en'  " set message language
-set langmenu=en   " set menu's language of gvim. no spaces beside '='
 
 " vim-plug
 call plug#begin('$VIM/vimfiles/plugged')
@@ -16,9 +16,10 @@ Plug 'nlknguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
 Plug 'nanotech/jellybeans.vim'
 Plug 'rakr/vim-one'
+Plug 'yuttie/inkstained-vim'
 Plug 'preservim/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
 Plug 'raimondi/delimitmate'
@@ -45,6 +46,7 @@ set showcmd
 set guioptions=
 set mouse=a
 set encoding=utf-8
+set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,gbk,big5
 set termencoding=utf-8
 filetype plugin indent on

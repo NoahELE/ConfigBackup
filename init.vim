@@ -1,9 +1,9 @@
+let $LANG='en' " set message language
+set langmenu=en " set menu's language of gvim. no spaces beside '='
+
 " use win shortcuts
 source $VIMRUNTIME/mswin.vim
 behave mswin
-
-let $LANG='en'  " set message language
-set langmenu=en   " set menu's language of gvim. no spaces beside '='
 
 " vim-plug
 call plug#begin('C:/NeoVim/plugged')
@@ -12,6 +12,7 @@ Plug 'nlknguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
 Plug 'nanotech/jellybeans.vim'
 Plug 'rakr/vim-one'
+Plug 'yuttie/inkstained-vim'
 Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
