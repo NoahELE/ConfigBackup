@@ -22,6 +22,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'raimondi/delimitmate'
 Plug 'luochen1990/rainbow'
 Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 let g:ctrlp_map='<c-p>'
 let g:ctrlp_cmd='CtrlP'
