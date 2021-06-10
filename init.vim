@@ -24,6 +24,7 @@ Plug 'luochen1990/rainbow'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'liuchengxu/vim-which-key'
 call plug#end()
 let g:ctrlp_map='<c-p>'
 let g:ctrlp_cmd='CtrlP'
@@ -70,6 +71,7 @@ set wildignorecase
 
 " keymappings
 let mapleader="\<Space>"
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 noremap <leader>nt :NERDTreeToggle<CR>
 noremap <leader>nf :NERDTreeFind<CR>
 noremap <leader>nc :NERDTreeCWD<CR>
