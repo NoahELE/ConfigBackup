@@ -66,20 +66,25 @@ set wildmode=list:longest,full
 set wildignorecase
 
 " keymappings
-let mapleader="\<space>"
-nnoremap <leader>w :w<CR>
-nnoremap <leader>q :q<CR>
-nnoremap <leader>kk :m-2<CR>
-nnoremap <leader>jj :m+1<CR>
+let mapleader="\<Space>"
 noremap <leader>nt :NERDTreeToggle<CR>
 noremap <leader>nf :NERDTreeFind<CR>
 noremap <leader>nc :NERDTreeCWD<CR>
 noremap <leader>p :CtrlP<CR>
-noremap <leader>b :buffers<CR>
+noremap <leader>jj :m+1<CR>
+noremap <leader>kk :m-2<CR>
+noremap <leader>qq :q<CR>
+noremap <leader>qQ :q!<CR>
+noremap <leader>qs :wq<CR>
+noremap <leader>qS :wqa<CR>
+noremap <leader>fs :w<CR>
+noremap <leader>fS :wa<CR>
+noremap <leader>ff :e 
+noremap <leader>bb :buffers<CR>
 noremap <leader>bn :bnext<CR>
 noremap <leader>bp :bprevious<CR>
 noremap <leader>bd :bdelete<CR>
-noremap <leader>t :tabs<CR>
+noremap <leader>tt :tabs<CR>
 noremap <leader>te :tabe<CR>
 noremap <leader>tc :tabclose<CR>
 noremap <leader>tn :tabnext<CR>
