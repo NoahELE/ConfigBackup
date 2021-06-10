@@ -1,12 +1,12 @@
-let $LANG='en' " set message language
-set langmenu=en " set menu's language of gvim. no spaces beside '='
+let $LANG='en'  " set message language
+set langmenu=en   " set menu's language of gvim. no spaces beside '='
 
 " use win shortcuts
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
 " vim-plug
-call plug#begin('C:/NeoVim/plugged')
+call plug#begin('$VIM/plugged')
 Plug 'mhinz/vim-startify'
 Plug 'nlknguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
@@ -18,6 +18,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdcommenter'
 Plug 'raimondi/delimitmate'
 Plug 'luochen1990/rainbow'
 Plug 'easymotion/vim-easymotion'
@@ -81,15 +82,15 @@ noremap <leader>fs :w<CR>
 noremap <leader>fS :wa<CR>
 noremap <leader>ff :e 
 noremap <leader>bb :buffers<CR>
+noremap <leader>bd :bdelete<CR>
 noremap <leader>bn :bnext<CR>
 noremap <leader>bp :bprevious<CR>
-noremap <leader>bd :bdelete<CR>
 noremap <leader>tt :tabs<CR>
 noremap <leader>te :tabe<CR>
-noremap <leader>tc :tabclose<CR>
+noremap <leader>td :tabclose<CR>
 noremap <leader>tn :tabnext<CR>
 noremap <leader>tp :tabprevious<CR>
 noremap <leader>ww <C-w>w
-noremap <leader>wc <C-w>c
+noremap <leader>wd <C-w>c
 noremap <leader>ws :split<CR>
 noremap <leader>wv :vsplit<CR>

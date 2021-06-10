@@ -8,12 +8,12 @@ behave mswin
 
 " vim-plug
 call plug#begin('$VIM/plugged')
-Plug 'mhinz/vim-startify'
 Plug 'nlknguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
 Plug 'nanotech/jellybeans.vim'
 Plug 'rakr/vim-one'
 Plug 'yuttie/inkstained-vim'
+Plug 'mhinz/vim-startify'
 Plug 'preservim/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -86,15 +86,15 @@ noremap <leader>fs :w<CR>
 noremap <leader>fS :wa<CR>
 noremap <leader>ff :e 
 noremap <leader>bb :buffers<CR>
+noremap <leader>bd :bdelete<CR>
 noremap <leader>bn :bnext<CR>
 noremap <leader>bp :bprevious<CR>
-noremap <leader>bd :bdelete<CR>
 noremap <leader>tt :tabs<CR>
 noremap <leader>te :tabe<CR>
-noremap <leader>tc :tabclose<CR>
+noremap <leader>td :tabclose<CR>
 noremap <leader>tn :tabnext<CR>
 noremap <leader>tp :tabprevious<CR>
 noremap <leader>ww <C-w>w
-noremap <leader>wc <C-w>c
+noremap <leader>wd <C-w>c
 noremap <leader>ws :split<CR>
 noremap <leader>wv :vsplit<CR>
