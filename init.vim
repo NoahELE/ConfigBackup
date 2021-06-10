@@ -72,10 +72,10 @@ set wildignorecase
 " keymappings
 let mapleader="\<Space>"
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
-noremap <leader>nt :NERDTreeToggle<CR>
-noremap <leader>nf :NERDTreeFind<CR>
-noremap <leader>nc :NERDTreeCWD<CR>
-noremap <leader>p :CtrlP<CR>
+nnoremap <leader>nt :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
+nnoremap <leader>nc :NERDTreeCWD<CR>
+nnoremap <leader>p :CtrlP<CR>
 noremap <leader>jj :m+1<CR>
 noremap <leader>kk :m-2<CR>
 noremap <leader>qq :q<CR>
@@ -86,6 +86,7 @@ noremap <leader>fs :w<CR>
 noremap <leader>fS :wa<CR>
 noremap <leader>ff :e 
 noremap <leader>bb :buffers<CR>
+noremap <leader>bh :Startify<CR>
 noremap <leader>bd :bdelete<CR>
 noremap <leader>bn :bnext<CR>
 noremap <leader>bp :bprevious<CR>
@@ -95,6 +96,10 @@ noremap <leader>td :tabclose<CR>
 noremap <leader>tn :tabnext<CR>
 noremap <leader>tp :tabprevious<CR>
 noremap <leader>ww <C-w>w
+noremap <leader>wh <C-w>h
+noremap <leader>wl <C-w>l
+noremap <leader>wj <C-w>j
+noremap <leader>wk <C-w>k
 noremap <leader>wd <C-w>c
-noremap <leader>ws :split<CR>
-noremap <leader>wv :vsplit<CR>
+noremap <leader>ws <C-w>s
+noremap <leader>wv <C-w>v
