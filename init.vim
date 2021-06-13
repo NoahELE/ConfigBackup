@@ -90,6 +90,8 @@ noremap <leader>bh :Startify<CR>
 noremap <leader>bd :bdelete<CR>
 noremap <leader>bn :bnext<CR>
 noremap <leader>bp :bprevious<CR>
+noremap <leader>bf :bfirst<CR>
+noremap <leader>bl :blast<CR>
 noremap <leader>tt :tabs<CR>
 noremap <leader>te :tabe<CR>
 noremap <leader>td :tabclose<CR>
@@ -103,3 +105,8 @@ noremap <leader>wk <C-w>k
 noremap <leader>wd <C-w>c
 noremap <leader>ws <C-w>s
 noremap <leader>wv <C-w>v
+noremap <leader>w= <C-w>=
+noremap <leader>wK <C-w>5-
+noremap <leader>wJ <C-w>5+
+noremap <leader>wH <C-w>5<
+noremap <leader>wL <C-w>5>
