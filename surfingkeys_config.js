@@ -34,9 +34,9 @@ Visual.style('cursor', 'background-color: #88C0D0;');
 -- DELETE LINE TO ENABLE THEME */
 
 // Doom One
-Hints.style('border: solid 2px #282C34; color:#98be65; background: initial; background-color: #2E3440;');
+Hints.style('border: solid 2px #282C34; color:#98c379; background: initial; background-color: #2E3440;');
 Hints.style("border: solid 2px #282C34 !important; padding: 1px !important; color: #51AFEF !important; background: #2E3440 !important;", "text");
-Visual.style('marks', 'background-color: #98be6599;');
+Visual.style('marks', 'background-color: #98c37999;');
 Visual.style('cursor', 'background-color: #51AFEF;');
 
 // Monokai
@@ -100,7 +100,7 @@ settings.theme = `
   --bg-dark: #21242B;
   --border: #2257A0;
   --main-fg: #51AFEF;
-  --accent-fg: #98be65;
+  --accent-fg: #98c379;
   --info-fg: #C678DD;
   --select: #4C566A;
   /* Unused Alternate Colors */
