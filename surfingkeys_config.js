@@ -11,15 +11,15 @@ map('\`', '\'');
 unmap('<Ctrl-h>');
 
 // Tomorrow-Night
-Hints.style('border: solid 2px #373B41; color:#52C196; background: initial; background-color: #1D1F21;');
-Hints.style("border: solid 2px #373B41 !important; padding: 1px !important; color: #C5C8C6 !important; background: #1D1F21 !important;", "text");
+Hints.style('border: solid 2px #373B41; color:#DEE0E9; background: initial; background-color: #1D1F21;');
+Hints.style("border: solid 2px #373B41 !important; padding: 1px !important; color: #1D1F21 !important; background: #DEE0E9 !important;", "text");
 Visual.style('marks', 'background-color: #52C19699;');
 Visual.style('cursor', 'background-color: #81A2BE;');
 
 settings.theme = `
 :root {
   /* Font */
-  --font: 'Source Code Pro', Ubuntu, sans;
+  --font: 'Source Code Pro';
   --font-size: 12;
   --font-weight: bold;
   /* -------------------- */
