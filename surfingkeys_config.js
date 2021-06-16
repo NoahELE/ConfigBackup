@@ -10,9 +10,6 @@ map('<Alt-f>', 'cf');
 map('\`', '\'');
 unmap('<Ctrl-h>');
 
-
-settings.hintAlign = "left";
-
 // ---- Hints ----
 // Hints have to be defined separately
 // Uncomment to enable
@@ -26,18 +23,18 @@ Visual.style('cursor', 'background-color: #81A2BE;');
 -- DELETE LINE TO ENABLE THEME */
 
 // Nord
-/* -- DELETE LINE TO ENABLE THEME
 Hints.style('border: solid 2px #4C566A; color:#A3BE8C; background: initial; background-color: #3B4252;');
 Hints.style("border: solid 2px #4C566A !important; padding: 1px !important; color: #E5E9F0 !important; background: #3B4252 !important;", "text");
 Visual.style('marks', 'background-color: #A3BE8C99;');
 Visual.style('cursor', 'background-color: #88C0D0;');
--- DELETE LINE TO ENABLE THEME */
 
 // Doom One
+/* -- DELETE LINE TO ENABLE THEME
 Hints.style('border: solid 2px #282C34; color:#98c379; background: initial; background-color: #2E3440;');
 Hints.style("border: solid 2px #282C34 !important; padding: 1px !important; color: #51AFEF !important; background: #2E3440 !important;", "text");
 Visual.style('marks', 'background-color: #98c37999;');
 Visual.style('cursor', 'background-color: #51AFEF;');
+-- DELETE LINE TO ENABLE THEME */
 
 // Monokai
 /* -- DELETE LINE TO ENABLE THEME
@@ -78,7 +75,6 @@ settings.theme = `
   /* -------------------- */
   /* --      NORD      -- */
   /* -------------------- */
-  /* -- DELETE LINE TO ENABLE THEME
   --fg: #E5E9F0;
   --bg: #3B4252;
   --bg-dark: #2E3440;
@@ -87,14 +83,13 @@ settings.theme = `
   --accent-fg: #A3BE8C;
   --info-fg: #5E81AC;
   --select: #4C566A;
-  -- DELETE LINE TO ENABLE THEME */
-  /* Unused Alternate Colors */
-  /* --orange: #D08770; */
-  /* --red: #BF616A; */
-  /* --yellow: #EBCB8B; */
+  --orange: #D08770;
+  --red: #BF616A;
+  --yellow: #EBCB8B;
   /* -------------------- */
   /* --    DOOM ONE    -- */
   /* -------------------- */
+  /* -- DELETE LINE TO ENABLE THEME
   --fg: #51AFEF;
   --bg: #2E3440;
   --bg-dark: #21242B;
@@ -103,6 +98,7 @@ settings.theme = `
   --accent-fg: #98c379;
   --info-fg: #C678DD;
   --select: #4C566A;
+  -- DELETE LINE TO ENABLE THEME */
   /* Unused Alternate Colors */
   /* --border-alt: #282C34; */
   /* --cyan: #46D9FF; */
