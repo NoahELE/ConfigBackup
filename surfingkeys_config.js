@@ -8,10 +8,10 @@ map('J', 'E');
 settings.hintAlign = 'left';
 settings.omnibarPosition = 'top';
 
-Hints.style('border: solid 2px #2D2E2E; color:#00bcd4; background: initial; background-color: #272822;');
-Hints.style("border: solid 2px #2D2E2E !important; padding: 1px !important; color: #A6E22E !important; background: #272822 !important;", "text");
-Visual.style('marks', 'background-color: #A6E22E99;');
-Visual.style('cursor', 'background-color: #F92660;');
+Hints.style('border: solid 2px #2d2e2e; color:#26c6da; background: initial; background-color: #272822;');
+Hints.style("border: solid 2px #2d2e2e !important; padding: 1px !important; color: #a6e22e !important; background: #272822 !important;", "text");
+Visual.style('marks', 'background-color: #a6e22e;');
+Visual.style('cursor', 'background-color: #26c6da;');
 
 settings.theme = `
 .sk_theme input {
