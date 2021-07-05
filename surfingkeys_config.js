@@ -6,7 +6,6 @@ map('K', 'R');
 map('J', 'E');
 
 settings.hintAlign = 'left';
-settings.omnibarPosition = 'top';
 
 Hints.style('border: solid 2px #2d2e2e; color:#26c6da; background: initial; background-color: #272822;');
 Hints.style("border: solid 2px #2d2e2e !important; padding: 1px !important; color: #a6e22e !important; background: #272822 !important;", "text");
@@ -165,9 +164,5 @@ div.sk_arrow[dir=down]>div:nth-of-type(2) {
 }
 div.sk_arrow[dir=up]>div:nth-of-type(2) {
     border-bottom: 10px solid #f8f8f2;
-}
-#sk_omnibar {
-    width: 100%;
-    left: 0%;
 }
 }`;
