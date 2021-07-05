@@ -8,7 +8,7 @@ map('J', 'E');
 settings.hintAlign = 'left';
 settings.omnibarPosition = 'top';
 
-Hints.style('border: solid 2px #2D2E2E; color:#36E090; background: initial; background-color: #272822;');
+Hints.style('border: solid 2px #2D2E2E; color:#00bcd4; background: initial; background-color: #272822;');
 Hints.style("border: solid 2px #2D2E2E !important; padding: 1px !important; color: #A6E22E !important; background: #272822 !important;", "text");
 Visual.style('marks', 'background-color: #A6E22E99;');
 Visual.style('cursor', 'background-color: #F92660;');
