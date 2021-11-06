@@ -41,6 +41,7 @@ set background=dark
 colorscheme PaperColor
 
 " personal configurations
+filetype plugin indent on
 set showmode
 set showcmd
 set guioptions=
@@ -49,12 +50,10 @@ set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,gbk,big5
 set termencoding=utf-8
-filetype plugin indent on
 set autoindent
 set expandtab
 set smarttab
 set number
-set relativenumber
 set cursorline
 set ruler
 set laststatus=2
