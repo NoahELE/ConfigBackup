@@ -63,6 +63,7 @@ set incsearch
 set ignorecase
 set smartcase
 set visualbell
+set t_vb=
 set nobackup
 set noswapfile
 set autoread

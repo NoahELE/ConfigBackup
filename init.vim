@@ -60,7 +60,8 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-set visualbell
+set noerrorbells
+set novisualbell
 set nobackup
 set noswapfile
 set autoread
