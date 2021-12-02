@@ -72,6 +72,7 @@ set wildmenu
 set wildmode=list:longest,full
 set wildignorecase
 set timeoutlen=500 
+set scrolloff=3
 
 " keymappings
 let mapleader="\<Space>"
