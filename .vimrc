@@ -76,6 +76,8 @@ set scrolloff=3
 
 " keymappings
 let mapleader="\<Space>"
+" use jj to replace esc
+inoremap jj <Esc>
 " which-key
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 " nerdtree

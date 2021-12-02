@@ -1,0 +1,19 @@
+let mapleader="\<Space>"
+
+set surround
+set commentary
+set easymotion
+
+set clipboard
+set ideajoin
+set visualbell
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set showmode
+set showcmd
+set scrolloff=3
+
+" use jj to replace esc
+inoremap jj <Esc>
