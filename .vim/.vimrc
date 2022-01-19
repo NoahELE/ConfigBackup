@@ -10,9 +10,6 @@ behave mswin
 source ~/.vim/plugins.vim
 
 " font & colorscheme
-set t_Co=256
-set guifont=Source\ Code\ Pro:h12
-set guifontwide=Sarasa\ Mono\ SC:h12
 syntax on
 set background=dark
 colorscheme snazzy
@@ -21,7 +18,6 @@ colorscheme snazzy
 filetype plugin indent on
 set showmode
 set showcmd
-set guioptions=
 set mouse=a
 set encoding=utf-8
 set fileencoding=utf-8
@@ -39,8 +35,8 @@ set incsearch
 set ignorecase
 set smartcase
 set visualbell
-set t_vb=
 set nobackup
+set nowritebackup
 set noswapfile
 set autoread
 set autowrite
@@ -49,6 +45,7 @@ set wildmode=list:longest,full
 set wildignorecase
 set timeoutlen=500 
 set scrolloff=3
+set shortmess+=c
 
 " keymappings
 source ~/.vim/keymappings.vim

@@ -45,6 +45,7 @@ set wildmode=list:longest,full
 set wildignorecase
 set timeoutlen=500 
 set scrolloff=3
+set shortmess+=c
 
 " keymappings
 source ~/.vim/keymappings.vim

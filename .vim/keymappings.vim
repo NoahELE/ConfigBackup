@@ -3,77 +3,71 @@ let mapleader="\<space>"
 " use jj to replace esc
 inoremap jj <esc>
 " which-key
-nnoremap <silent> <leader> :WhichKey '<space>'<CR>
+nnoremap <silent><leader> :WhichKey '<space>'<cr>
 " nerdtree
-nnoremap <leader>nt :NERDTreeToggle<CR>
-nnoremap <leader>nf :NERDTreeFind<CR>
-nnoremap <leader>nc :NERDTreeCWD<CR>
+nnoremap <leader>nt :NERDTreeToggle<cr>
+nnoremap <leader>nf :NERDTreeFind<cr>
+nnoremap <leader>nc :NERDTreeCWD<cr>
 " ctrlp
-nnoremap <leader>p :CtrlP<CR>
+nnoremap <leader>p :CtrlP<cr>
 " quit
-noremap <leader>qq :q<CR>
-noremap <leader>qQ :q!<CR>
-noremap <leader>qs :wq<CR>
-noremap <leader>qS :wqa<CR>
+noremap <leader>qq :q<cr>
+noremap <leader>qQ :q!<cr>
+noremap <leader>qs :wq<cr>
+noremap <leader>qS :wqa<cr>
 " files
-noremap <leader>fs :w<CR>
-noremap <leader>fS :wa<CR>
-noremap <leader>ff :e 
+noremap <leader>fs :w<cr>
+noremap <leader>fS :wa<cr>
+noremap <leader>ff :e<space>
 " buffers
-noremap <leader>bb :buffers<CR>
-noremap <leader>bh :Startify<CR>
-noremap <leader>bd :bdelete<CR>
-noremap <leader>bn :bnext<CR>
-noremap <leader>bp :bprevious<CR>
-noremap <leader>bf :bfirst<CR>
-noremap <leader>bl :blast<CR>
-noremap <leader>b1 :b 1<CR>
-noremap <leader>b2 :b 2<CR>
-noremap <leader>b3 :b 3<CR>
-noremap <leader>b4 :b 4<CR>
-noremap <leader>b5 :b 5<CR>
-noremap <leader>b6 :b 6<CR>
-noremap <leader>b7 :b 7<CR>
-noremap <leader>b8 :b 8<CR>
-noremap <leader>b9 :b 9<CR>
+noremap <leader>bb :buffers<cr>
+noremap <leader>bd :bdelete<cr>
+noremap <leader>bn :bnext<cr>
+noremap <leader>bp :bprevious<cr>
+noremap <leader>bf :bfirst<cr>
+noremap <leader>bl :blast<cr>
+noremap <leader>bh :Startify<cr>
+noremap <leader>b1 :b1<cr>
+noremap <leader>b2 :b2<cr>
+noremap <leader>b3 :b3<cr>
+noremap <leader>b4 :b4<cr>
+noremap <leader>b5 :b5<cr>
+noremap <leader>b6 :b6<cr>
+noremap <leader>b7 :b7<cr>
+noremap <leader>b8 :b8<cr>
+noremap <leader>b9 :b9<cr>
 " tabs
-noremap <leader>tt :tabs<CR>
-noremap <leader>te :tabe<CR>
-noremap <leader>td :tabclose<CR>
-noremap <leader>tn :tabnext<CR>
-noremap <leader>tp :tabprevious<CR>
-noremap <leader>t1 :tab 1<CR>
-noremap <leader>t2 :tab 2<CR>
-noremap <leader>t3 :tab 3<CR>
-noremap <leader>t4 :tab 4<CR>
-noremap <leader>t5 :tab 5<CR>
-noremap <leader>t6 :tab 6<CR>
-noremap <leader>t7 :tab 7<CR>
-noremap <leader>t8 :tab 8<CR>
-noremap <leader>t9 :tab 9<CR>
+noremap <leader>tt :tabs<cr>
+noremap <leader>te :tabe<cr>
+noremap <leader>td :tabclose<cr>
+noremap <leader>tn :tabnext<cr>
+noremap <leader>tp :tabprevious<cr>
+noremap <leader>tf :tabfirst<cr>
+noremap <leader>tl :tablast<cr>
 " windows
-noremap <leader>ww <C-w>w
-noremap <leader>wh <C-w>h
-noremap <leader>wl <C-w>l
-noremap <leader>wj <C-w>j
-noremap <leader>wk <C-w>k
-noremap <leader>wd <C-w>c
-noremap <leader>ws <C-w>s
-noremap <leader>wv <C-w>v
-noremap <leader>w= <C-w>=
-noremap <leader>wK <C-w>5-
-noremap <leader>wJ <C-w>5+
-noremap <leader>wH <C-w>5<
-noremap <leader>wL <C-w>5>
+noremap <leader>ww <c-w>w
+noremap <leader>wh <c-w>h
+noremap <leader>wl <c-w>l
+noremap <leader>wj <c-w>j
+noremap <leader>wk <c-w>k
+noremap <leader>wd <c-w>c
+noremap <leader>ws <c-w>s
+noremap <leader>wv <c-w>v
+noremap <leader>w= <c-w>=
+noremap <leader>wK <c-w>10+
+noremap <leader>wJ <c-w>10-
+noremap <leader>wH <c-w>10<
+noremap <leader>wL <c-w>10>
 " git
-nnoremap <Leader>gg :Git<CR>
-nnoremap <Leader>gd :Gdiffsplit<CR>
-nnoremap <Leader>gc :Git commit<CR>
-nnoremap <Leader>gb :Git blame<CR>
-nnoremap <Leader>gl :Gclog<CR>
-nnoremap <Leader>gp :Git push<CR>
-nnoremap <Leader>gr :Gread<CR>
-nnoremap <Leader>gw :Gwrite<CR>
-nnoremap <Leader>ge :Gedit<CR>
-nnoremap <Leader>ga :Git add .<CR>
-nnoremap <Leader>gi :Git add -p %<CR>
+nnoremap <Leader>gg :Git<cr>
+nnoremap <Leader>gd :Gdiffsplit<cr>
+nnoremap <Leader>gc :Git commit<cr>
+nnoremap <Leader>gb :Git blame<cr>
+nnoremap <Leader>gl :Gclog<cr>
+nnoremap <Leader>gp :Git push<cr>
+nnoremap <Leader>gr :Gread<cr>
+nnoremap <Leader>gw :Gwrite<cr>
+nnoremap <Leader>ge :Gedit<cr>
+nnoremap <Leader>ga :Git add .<cr>
+nnoremap <Leader>gi :Git add -p %<cr>
+
