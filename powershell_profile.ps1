@@ -10,6 +10,7 @@ Invoke-Expression (&{
 })
 Remove-Item alias:gc -Force
 Remove-Item alias:gp -Force
+Remove-Item alias:gl -Force
 Function ga {
     git add $args
 }
@@ -21,6 +22,9 @@ Function gc {
 }
 Function gp {
     git push
+}
+Function gl {
+    git pull
 }
 $env:FZF_DEFAULT_COMMAND = 'fd --type f'
 $env:FZF_DEFAULT_OPTS = '--preview "bat --style=numbers --color=always --line-range :500 {}"'
