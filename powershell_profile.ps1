@@ -9,6 +9,7 @@ Invoke-Expression (&{
     (zoxide init --hook $hook powershell | Out-String)
 })
 Remove-Item alias:gc -Force
+Remove-Item alias:gp -Force
 Function ga {
     git add $args
 }
