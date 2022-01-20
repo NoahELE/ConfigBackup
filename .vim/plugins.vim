@@ -8,10 +8,13 @@ Plug 'joshdick/onedark.vim'
 Plug 'mhinz/vim-startify'
 Plug 'itchyny/lightline.vim'
 Plug 'luochen1990/rainbow'
+Plug 'RRethy/vim-illuminate'
 " functionality
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'honza/vim-snippets'
 Plug 'preservim/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
@@ -22,17 +25,31 @@ Plug 'airblade/vim-gitgutter'
 Plug 'liuchengxu/vim-which-key'
 call plug#end()
 
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 'ra'
-
+" rainbow
 let g:rainbow_active = 1
-
+"
+" lightline
 let g:lightline = { 'colorscheme': 'snazzy' }
 
-" Use tab for trigger completion with characters ahead and navigate.
-" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
-" other plugin before putting this into your config.
+" coc.nvim
+set hidden
+set updatetime=300
+set shortmess+=c
+let g:coc_global_extensions = [
+      \ 'coc-json',
+      \ 'coc-xml',
+      \ 'coc-yaml',
+      \ 'coc-html',
+      \ 'coc-vimlsp',
+      \ 'coc-marketplace',
+      \ 'coc-pyright',
+      \ 'coc-java',
+      \ 'coc-tsserver',
+      \ 'coc-clangd',
+      \ 'coc-snippets',
+      \ 'coc-go',
+      \ ]
+
 function! s:check_back_space() abort 
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
@@ -40,15 +57,16 @@ endfunction
 
 inoremap <silent><expr> <tab> pumvisible() ? "\<c-n>" : <sid>check_back_space() ? "\<tab>" : coc#refresh()
 inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<c-h>"
-
-" Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
-
-" Make <cr> auto-select the first completion item and notify coc.nvim to
-" format on enter, <cr> could be remapped by other vim plugin 
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<c-g>u\<cr>\<c-r>=coc#on_enter()\<cr>"
 
-" Use gt to show documentation in preview window
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
 function! s:show_documentation() 
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
@@ -59,17 +77,21 @@ function! s:show_documentation()
   endif
 endfunction
 
-nnoremap <silent> gd :call <sid>show_documentation()<cr>
+nnoremap <silent> K :call <sid>show_documentation()<cr>
 
 " vim which key
+set timeoutlen=500 
 call which_key#register('<space>', 'g:which_key_map')
+
 let g:which_key_map = {}
+
 let g:which_key_map.n = { 
       \ 'name': '+nerdtree',
       \ 't': 'toggle nerdtree',
       \ 'f': 'find current file in nerdtree',
       \ 'c': 'change nerdtree to cwd',
       \ }
+
 let g:which_key_map.q = {
       \ 'name': '+quit',
       \ 'q': 'quit',
@@ -77,12 +99,15 @@ let g:which_key_map.q = {
       \ 's': 'quit and save',
       \ 'S': 'quit and save all',
       \ }
+
 let g:which_key_map.f = {
       \ 'name': '+file',
       \ 's': 'save current',
       \ 'S': 'save all',
-      \ 'f': 'open',
+      \ 'e': 'open',
+      \ 'f': 'fuzzy find',
       \ }
+
 let g:which_key_map.b = { 
       \ 'name' : '+buffer',
       \ 'b': 'list buffers',
@@ -102,6 +127,7 @@ let g:which_key_map.b = {
       \ '8': 'buffer 8',
       \ '9': 'buffer 9',
       \ }
+
 let g:which_key_map.t = {
       \ 'name': '+tab',
       \ 't': 'list tabs',
@@ -110,6 +136,7 @@ let g:which_key_map.t = {
       \ 'n': 'next tab',
       \ 'p': 'previous tab',
       \ }
+
 let g:which_key_map.w = {
       \ 'name': '+window',
       \ 'w': 'switch window',
@@ -126,9 +153,11 @@ let g:which_key_map.w = {
       \ 'H': 'decrease window width by 10',
       \ 'L': 'increase window width by 10',
       \}
+
 let g:which_key_map.c = {
       \ 'name': '+comment',
       \}
+
 let g:which_key_map.g = {
       \ 'name': '+git',
       \}

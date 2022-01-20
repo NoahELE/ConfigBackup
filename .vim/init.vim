@@ -5,47 +5,46 @@ behave mswin
 " vim-plug plugins
 source ~/.vim/plugins.vim
 
+" personal configurations
 " font & colorscheme
-set guifont=Source\ Code\ Pro:h12
-set guifontwide=Sarasa\ Mono\ SC:h12
 syntax on
 set background=dark
 colorscheme snazzy
-
-" personal configurations
 filetype plugin indent on
+" appearance
 set showmode
 set showcmd
-set guioptions=
-set mouse=a
+set number
+set ruler
+set cursorline
+set laststatus=2
+set scrolloff=3
+set noerrorbells
+set novisualbell
+" encoding
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,gbk,big5
 set termencoding=utf-8
+" indent and tab
 set autoindent
 set expandtab
 set smarttab
-set number
-set cursorline
-set ruler
-set laststatus=2
+" search
 set showmatch
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-set noerrorbells
-set novisualbell
+" file
 set nobackup
 set noswapfile
 set autoread
 set autowrite
+" menu
 set wildmenu
-set wildmode=list:longest,full
 set wildignorecase
-set timeoutlen=500 
-set scrolloff=3
-set shortmess+=c
 
 " keymappings
 source ~/.vim/keymappings.vim
+

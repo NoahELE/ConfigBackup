@@ -18,9 +18,10 @@ noremap <leader>qS :wqa<cr>
 " files
 noremap <leader>fs :w<cr>
 noremap <leader>fS :wa<cr>
-noremap <leader>ff :e<space>
+noremap <leader>fe :e<space>
+noremap <leader>ff :Files<cr>
 " buffers
-noremap <leader>bb :buffers<cr>
+noremap <leader>bb :Buffers<cr>
 noremap <leader>bd :bdelete<cr>
 noremap <leader>bn :bnext<cr>
 noremap <leader>bp :bprevious<cr>
