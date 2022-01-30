@@ -5,6 +5,8 @@ Plug 'nlknguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
 Plug 'connorholyday/vim-snazzy'
 Plug 'joshdick/onedark.vim'
+Plug 'ayu-theme/ayu-vim'
+Plug 'tomasr/molokai'
 Plug 'mhinz/vim-startify'
 Plug 'itchyny/lightline.vim'
 Plug 'luochen1990/rainbow'
@@ -12,7 +14,6 @@ Plug 'RRethy/vim-illuminate'
 " functionality
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'honza/vim-snippets'
-Plug 'preservim/nerdtree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
@@ -25,11 +26,17 @@ Plug 'airblade/vim-gitgutter'
 Plug 'liuchengxu/vim-which-key'
 call plug#end()
 
+" ayu
+let ayucolor = 'mirage'
+
 " rainbow
 let g:rainbow_active = 1
 "
 " lightline
-let g:lightline = { 'colorscheme': 'snazzy' }
+let g:lightline = { 'colorscheme': 'PaperColor' }
+
+" easymotion
+let g:EasyMotion_smartcase = 1
 
 " coc.nvim
 set hidden
@@ -48,6 +55,8 @@ let g:coc_global_extensions = [
       \ 'coc-clangd',
       \ 'coc-snippets',
       \ 'coc-go',
+      \ 'coc-lists',
+      \ 'coc-explorer',
       \ ]
 
 function! s:check_back_space() abort 
@@ -60,12 +69,12 @@ inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<c-h>"
 inoremap <silent><expr> <c-space> coc#refresh()
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<c-g>u\<cr>\<c-r>=coc#on_enter()\<cr>"
 
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> [g <plug>(coc-diagnostic-prev)
+nmap <silent> ]g <plug>(coc-diagnostic-next)
+nmap <silent> gd <plug>(coc-definition)
+nmap <silent> gy <plug>(coc-type-definition)
+nmap <silent> gi <plug>(coc-implementation)
+nmap <silent> gr <plug>(coc-references)
 
 function! s:show_documentation() 
   if (index(['vim','help'], &filetype) >= 0)
@@ -85,13 +94,6 @@ call which_key#register('<space>', 'g:which_key_map')
 
 let g:which_key_map = {}
 
-let g:which_key_map.n = { 
-      \ 'name': '+nerdtree',
-      \ 't': 'toggle nerdtree',
-      \ 'f': 'find current file in nerdtree',
-      \ 'c': 'change nerdtree to cwd',
-      \ }
-
 let g:which_key_map.q = {
       \ 'name': '+quit',
       \ 'q': 'quit',
@@ -102,10 +104,11 @@ let g:which_key_map.q = {
 
 let g:which_key_map.f = {
       \ 'name': '+file',
-      \ 's': 'save current',
-      \ 'S': 'save all',
       \ 'e': 'open',
       \ 'f': 'fuzzy find',
+      \ 'l': 'list file tree',
+      \ 's': 'save current',
+      \ 'S': 'save all',
       \ }
 
 let g:which_key_map.b = { 
@@ -135,23 +138,27 @@ let g:which_key_map.t = {
       \ 'd': 'close tab',
       \ 'n': 'next tab',
       \ 'p': 'previous tab',
+      \ 'f': 'first tab',
+      \ 'l': 'last tab',
       \ }
 
 let g:which_key_map.w = {
       \ 'name': '+window',
       \ 'w': 'switch window',
-      \ 'h': 'navigate to left window',
-      \ 'l': 'navigate to right window',
-      \ 'j': 'navigate to lower window',
-      \ 'k': 'navigate to upper window',
-      \ 'd': 'close current window',
-      \ 's': 'split window horizontally',
-      \ 'v': 'split window vertically',
-      \ '=': 'split window equally',
-      \ 'J': 'decrease window height by 10',
-      \ 'K': 'increase window height by 10',
-      \ 'H': 'decrease window width by 10',
-      \ 'L': 'increase window width by 10',
+      \ 'h': 'navigate left',
+      \ 'l': 'navigate right',
+      \ 'j': 'navigate lower',
+      \ 'k': 'navigate upper',
+      \ 'n': 'new window',
+      \ 'c': 'close current window',
+      \ 'o': 'keep only current window',
+      \ 's': 'split horizontally',
+      \ 'v': 'split vertically',
+      \ '=': 'split equally',
+      \ 'J': 'decrease height by 10',
+      \ 'K': 'increase height by 10',
+      \ 'H': 'decrease width by 10',
+      \ 'L': 'increase width by 10',
       \}
 
 let g:which_key_map.c = {
@@ -161,4 +168,8 @@ let g:which_key_map.c = {
 let g:which_key_map.g = {
       \ 'name': '+git',
       \}
+
+let g:which_key_map.g = {
+      \ 'name': '+hunk',
+      \ }
 

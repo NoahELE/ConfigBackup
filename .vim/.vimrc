@@ -12,8 +12,9 @@ source ~/.vim/plugins.vim
 " personal configurations
 " font & colorscheme
 syntax on
+set termguicolors
 set background=dark
-colorscheme snazzy
+colorscheme PaperColor
 filetype plugin indent on
 " appearance
 set showmode
@@ -47,6 +48,8 @@ set autowrite
 " menu
 set wildmenu
 set wildignorecase
+" mouse
+set mouse=a
 
 " keymappings
 source ~/.vim/keymappings.vim
