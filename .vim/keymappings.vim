@@ -1,22 +1,29 @@
 " keymappings
 let mapleader="\<space>"
+
 " use jj to replace esc
 inoremap jj <esc>
+
 " which-key
 nnoremap <silent><leader> :WhichKey '<space>'<cr>
-" easymotion
-nmap s <plug>(easymotion-s2)
+
+" sneak
+map f <plug>Sneak_f
+map F <plug>Sneak_F
+
 " quit
 nnoremap <leader>qq :q<cr>
 nnoremap <leader>qQ :q!<cr>
 nnoremap <leader>qs :wq<cr>
 nnoremap <leader>qS :wqa<cr>
+
 " files
 nnoremap <leader>fs :w<cr>
 nnoremap <leader>fS :wa<cr>
 nnoremap <leader>fe :e<space>
 nnoremap <leader>ff :Files<cr>
 nnoremap <leader>fl :CocCommand explorer<cr>
+
 " buffers
 nnoremap <leader>bb :Buffers<cr>
 nnoremap <leader>bd :bdelete<cr>
@@ -34,6 +41,7 @@ nnoremap <leader>b6 :b6<cr>
 nnoremap <leader>b7 :b7<cr>
 nnoremap <leader>b8 :b8<cr>
 nnoremap <leader>b9 :b9<cr>
+
 " tabs
 nnoremap <leader>tt :tabs<cr>
 nnoremap <leader>te :tabe<cr>
@@ -42,6 +50,7 @@ nnoremap <leader>tn :tabnext<cr>
 nnoremap <leader>tp :tabprevious<cr>
 nnoremap <leader>tf :tabfirst<cr>
 nnoremap <leader>tl :tablast<cr>
+
 " windows
 nnoremap <leader>ww <c-w>w
 nnoremap <leader>wh <c-w>h
@@ -58,6 +67,7 @@ nnoremap <leader>wK <c-w>10+
 nnoremap <leader>wJ <c-w>10-
 nnoremap <leader>wH <c-w>10<
 nnoremap <leader>wL <c-w>10>
+
 " git
 nnoremap <leader>gg :Git<cr>
 nnoremap <leader>gd :Gdiffsplit<cr>

@@ -21,6 +21,7 @@ Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
 Plug 'raimondi/delimitmate'
 Plug 'easymotion/vim-easymotion'
+Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'liuchengxu/vim-which-key'
@@ -31,32 +32,37 @@ let ayucolor = 'mirage'
 
 " rainbow
 let g:rainbow_active = 1
-"
+
 " lightline
 let g:lightline = { 'colorscheme': 'PaperColor' }
 
 " easymotion
 let g:EasyMotion_smartcase = 1
 
+" sneak
+let g:sneak#use_ic_scs = 1
+
 " coc.nvim
 set hidden
 set updatetime=300
 set shortmess+=c
 let g:coc_global_extensions = [
+      \ 'coc-explorer',
+      \ 'coc-lists',
+      \ 'coc-vimlsp',
+      \ 'coc-marketplace',
+      \ 'coc-snippets',
       \ 'coc-json',
       \ 'coc-xml',
       \ 'coc-yaml',
+      \ 'coc-toml',
       \ 'coc-html',
-      \ 'coc-vimlsp',
-      \ 'coc-marketplace',
       \ 'coc-pyright',
       \ 'coc-java',
       \ 'coc-tsserver',
       \ 'coc-clangd',
-      \ 'coc-snippets',
       \ 'coc-go',
-      \ 'coc-lists',
-      \ 'coc-explorer',
+      \ 'coc-rust-analyzer',
       \ ]
 
 function! s:check_back_space() abort 
@@ -169,7 +175,7 @@ let g:which_key_map.g = {
       \ 'name': '+git',
       \}
 
-let g:which_key_map.g = {
+let g:which_key_map.h = {
       \ 'name': '+hunk',
       \ }
 

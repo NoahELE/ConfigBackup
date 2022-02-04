@@ -16,6 +16,8 @@ set termguicolors
 set background=dark
 colorscheme PaperColor
 filetype plugin indent on
+highlight Sneak guibg=DarkCyan guifg=White
+
 " appearance
 set showmode
 set showcmd
@@ -24,6 +26,7 @@ set ruler
 set visualbell
 set laststatus=2
 set scrolloff=3
+
 " encoding
 set encoding=utf-8
 set fileencoding=utf-8
@@ -33,23 +36,35 @@ set termencoding=utf-8
 set autoindent
 set expandtab
 set smarttab
+
 " search
 set showmatch
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+
 " file
 set nobackup
 set nowritebackup
 set noswapfile
 set autoread
 set autowrite
+
 " menu
 set wildmenu
 set wildignorecase
+
 " mouse
 set mouse=a
 
+" mode dependent caret
+let &t_ti.="\e[1 q"
+let &t_SI.="\e[5 q"
+let &t_SR.="\e[4 q"
+let &t_EI.="\e[1 q"
+let &t_te.="\e[0 q"
+
 " keymappings
 source ~/.vim/keymappings.vim
+
