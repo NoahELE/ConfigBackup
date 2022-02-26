@@ -9,11 +9,11 @@ Invoke-Expression (&{
     (zoxide init --hook $hook powershell | Out-String)
 })
 fnm env | Out-String | Invoke-Expression
-$env:FZF_DEFAULT_COMMAND = 'fd --hidden --follow --type file --exclude={.git,.idea,.vscode,node_modules}'
-$env:FZF_DEFAULT_OPTS = '--preview "bat --style=numbers --color=always --line-range :500 {}"'
-Remove-Alias gc -Force
-Remove-Alias gp -Force
-Remove-Alias gl -Force
+$env:FZF_DEFAULT_COMMAND = 'fd --type file --color always'
+$env:FZF_DEFAULT_OPTS = '--ansi --preview "bat --style=numbers --color=always --line-range :500 {}"'
+Remove-Item alias:gc -Force
+Remove-Item alias:gp -Force
+Remove-Item alias:gl -Force
 Function ga {
     git add $args
 }
@@ -30,10 +30,16 @@ Function gl {
     git pull
 }
 Function proxy {
-    $env:http_proxy="http://127.0.0.1:7890";$env:https_proxy="http://127.0.0.1:7890"
+    $env:HTTP_PROXY="http://127.0.0.1:7890"
+    $env:http_proxy="http://127.0.0.1:7890"
+    $env:HTTPS_PROXY="http://127.0.0.1:7890"
+    $env:https_proxy="http://127.0.0.1:7890"
     (Invoke-WebRequest https://ip.gs/ip).Content
 }
 Function unproxy {
-    $env:http_proxy="http://127.0.0.1:7890";$env:https_proxy="http://127.0.0.1:7890"
+    Remove-Item env:HTTP_PROXY
+    Remove-Item env:http_proxy
+    Remove-Item env:HTTPS_PROXY
+    Remove-Item env:https_proxy
     (Invoke-WebRequest https://ip.gs/ip).Content
 }
