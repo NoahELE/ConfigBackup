@@ -8,6 +8,9 @@ Invoke-Expression (&{
     $hook = if ($PSVersionTable.PSVersion.Major -lt 6) { 'prompt' } else { 'pwd' }
     (zoxide init --hook $hook powershell | Out-String)
 })
+fnm env | Out-String | Invoke-Expression
+$env:FZF_DEFAULT_COMMAND = 'fd --hidden --follow --type file --exclude={.git,.idea,.vscode,node_modules}'
+$env:FZF_DEFAULT_OPTS = '--preview "bat --style=numbers --color=always --line-range :500 {}"'
 Remove-Alias gc -Force
 Remove-Alias gp -Force
 Remove-Alias gl -Force
@@ -34,5 +37,3 @@ Function unproxy {
     $env:http_proxy="http://127.0.0.1:7890";$env:https_proxy="http://127.0.0.1:7890"
     (Invoke-WebRequest https://ip.gs/ip).Content
 }
-$env:FZF_DEFAULT_COMMAND = 'fd --hidden --follow --type file --exclude={.git,.idea,.vscode,node_modules}'
-$env:FZF_DEFAULT_OPTS = '--preview "bat --style=numbers --color=always --line-range :500 {}"'

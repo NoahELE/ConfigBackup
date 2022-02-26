@@ -33,6 +33,16 @@ let ayucolor = 'mirage'
 " rainbow
 let g:rainbow_active = 1
 
+" startify
+let g:startify_custom_header = startify#center([
+      \ '███╗   ██╗ ██████╗  █████╗ ██╗  ██╗███████╗██╗     ███████╗',
+      \ '████╗  ██║██╔═══██╗██╔══██╗██║  ██║██╔════╝██║     ██╔════╝',
+      \ '██╔██╗ ██║██║   ██║███████║███████║█████╗  ██║     █████╗  ',
+      \ '██║╚██╗██║██║   ██║██╔══██║██╔══██║██╔══╝  ██║     ██╔══╝  ',
+      \ '██║ ╚████║╚██████╔╝██║  ██║██║  ██║███████╗███████╗███████╗',
+      \ '╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝',
+      \ ])
+
 " lightline
 let g:lightline = { 'colorscheme': 'PaperColor' }
 
@@ -112,7 +122,7 @@ let g:which_key_map.f = {
       \ 'name': '+file',
       \ 'e': 'open',
       \ 'f': 'fuzzy find',
-      \ 'l': 'list file tree',
+      \ 'l': 'file tree',
       \ 's': 'save current',
       \ 'S': 'save all',
       \ }

@@ -22,7 +22,7 @@ nnoremap <leader>fs :w<cr>
 nnoremap <leader>fS :wa<cr>
 nnoremap <leader>fe :e<space>
 nnoremap <leader>ff :Files<cr>
-nnoremap <leader>fl :CocCommand explorer<cr>
+nnoremap <leader>ft :CocCommand explorer<cr>
 
 " buffers
 nnoremap <leader>bb :Buffers<cr>
