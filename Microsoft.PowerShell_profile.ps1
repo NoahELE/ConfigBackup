@@ -31,19 +31,13 @@ Function gl {
 }
 Function proxy {
     $env:ALL_PROXY="http://127.0.0.1:7890"
-    $env:all_proxy="http://127.0.0.1:7890"
     $env:HTTP_PROXY="http://127.0.0.1:7890"
-    $env:http_proxy="http://127.0.0.1:7890"
     $env:HTTPS_PROXY="http://127.0.0.1:7890"
-    $env:https_proxy="http://127.0.0.1:7890"
     (Invoke-WebRequest https://ip.gs/ip).Content
 }
 Function unproxy {
     Remove-Item env:ALL_PROXY
-    Remove-Item env:all_proxy
     Remove-Item env:HTTP_PROXY
-    Remove-Item env:http_proxy
     Remove-Item env:HTTPS_PROXY
-    Remove-Item env:https_proxy
     (Invoke-WebRequest https://ip.gs/ip).Content
 }
