@@ -8,7 +8,6 @@ Invoke-Expression (&{
     $hook = if ($PSVersionTable.PSVersion.Major -lt 6) { 'prompt' } else { 'pwd' }
     (zoxide init --hook $hook powershell | Out-String)
 })
-fnm env | Out-String | Invoke-Expression
 $env:FZF_DEFAULT_COMMAND = 'fd --type file --color always'
 $env:FZF_DEFAULT_OPTS = '--ansi --preview "bat --style=numbers --color=always --line-range :500 {}"'
 Remove-Item alias:gc -Force
