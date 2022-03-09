@@ -21,7 +21,6 @@ Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
 Plug 'raimondi/delimitmate'
 Plug 'easymotion/vim-easymotion'
-Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'liuchengxu/vim-which-key'
@@ -48,9 +47,6 @@ let g:lightline = { 'colorscheme': 'PaperColor' }
 
 " easymotion
 let g:EasyMotion_smartcase = 1
-
-" sneak
-let g:sneak#use_ic_scs = 1
 
 " coc.nvim
 set hidden
