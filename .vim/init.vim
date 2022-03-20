@@ -12,7 +12,6 @@ set termguicolors
 set background=dark
 colorscheme PaperColor
 filetype plugin indent on
-highlight Sneak guibg=DarkCyan guifg=White
 
 " appearance
 set showmode

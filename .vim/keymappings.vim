@@ -7,10 +7,6 @@ inoremap jj <esc>
 " which-key
 nnoremap <silent><leader> :WhichKey '<space>'<cr>
 
-" sneak
-map f <plug>Sneak_f
-map F <plug>Sneak_F
-
 " quit
 nnoremap <leader>qq :q<cr>
 nnoremap <leader>qQ :q!<cr>
