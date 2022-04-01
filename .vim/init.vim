@@ -18,7 +18,6 @@ set showmode
 set showcmd
 set number
 set ruler
-set cursorline
 set laststatus=2
 set scrolloff=3
 set noerrorbells
@@ -27,7 +26,7 @@ set novisualbell
 " encoding
 set encoding=utf-8
 set fileencoding=utf-8
-set fileencodings=ucs-bom,utf-8,gbk,big5
+set fileencodings=ucs-bom,utf-8,gbk,big5,latin1
 set termencoding=utf-8
 
 " indent and tab

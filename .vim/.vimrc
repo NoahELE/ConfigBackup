@@ -29,8 +29,9 @@ set scrolloff=3
 " encoding
 set encoding=utf-8
 set fileencoding=utf-8
-set fileencodings=ucs-bom,utf-8,gbk,big5
+set fileencodings=ucs-bom,utf-8,gbk,big5,latin1
 set termencoding=utf-8
+
 " indent and tab
 set autoindent
 set expandtab
