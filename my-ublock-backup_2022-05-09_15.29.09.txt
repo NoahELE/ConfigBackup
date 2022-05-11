@@ -1,20 +1,22 @@
 {
-  "timeStamp": 1640185179998,
-  "version": "1.39.2",
+  "timeStamp": 1652081349504,
+  "version": "1.42.4",
   "userSettings": {
     "advancedUserEnabled": true,
     "cloudStorageEnabled": true,
-    "dynamicFilteringEnabled": true,
-    "externalLists": "https://anti-ad.net/adguard.txt\nhttps://cdn.jsdelivr.net/gh/cjx82630/cjxlist/cjx-annoyance.txt\nhttps://cdn.jsdelivr.net/gh/uniartisan/adblock_list/adblock_plus.txt\nhttps://cdn.jsdelivr.net/gh/uniartisan/adblock_list/adblock_privacy.txt\nhttps://cdn.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/rule.txt\nhttps://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt\nhttps://www.i-dont-care-about-cookies.eu/abp/",
+    "uiAccentCustom0": "#309fa6",
+    "externalLists": "https://anti-ad.net/adguard.txt\nhttps://cdn.jsdelivr.net/gh/cjx82630/cjxlist/cjx-annoyance.txt\nhttps://cdn.jsdelivr.net/gh/uniartisan/adblock_list/adblock_plus.txt\nhttps://cdn.jsdelivr.net/gh/uniartisan/adblock_list/adblock_privacy.txt\nhttps://cdn.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/rule.txt\nhttps://winhelp2002.mvps.org/hosts.txt\nhttps://www.i-dont-care-about-cookies.eu/abp/",
     "importedLists": [
       "https://anti-ad.net/adguard.txt",
       "https://cdn.jsdelivr.net/gh/cjx82630/cjxlist/cjx-annoyance.txt",
       "https://cdn.jsdelivr.net/gh/uniartisan/adblock_list/adblock_plus.txt",
       "https://cdn.jsdelivr.net/gh/uniartisan/adblock_list/adblock_privacy.txt",
       "https://cdn.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/rule.txt",
+      "https://winhelp2002.mvps.org/hosts.txt",
       "https://www.i-dont-care-about-cookies.eu/abp/"
     ],
     "popupPanelSections": 15,
+    "suspendUntilListsAreLoaded": true,
     "webrtcIPAddressHidden": true
   },
   "selectedFilterLists": [
@@ -22,6 +24,7 @@
     "ublock-filters",
     "ublock-badware",
     "ublock-privacy",
+    "ublock-quick-fixes",
     "ublock-abuse",
     "ublock-unbreak",
     "adguard-generic",
@@ -36,16 +39,16 @@
     "fanboy-cookiemonster",
     "ublock-annoyances",
     "dpollock-0",
-    "mvps-0",
     "plowe-0",
     "CHN-0",
     "JPN-1",
-    "https://anti-ad.net/adguard.txt",
     "https://cdn.jsdelivr.net/gh/cjx82630/cjxlist/cjx-annoyance.txt",
     "https://www.i-dont-care-about-cookies.eu/abp/",
+    "https://winhelp2002.mvps.org/hosts.txt",
     "https://cdn.jsdelivr.net/gh/uniartisan/adblock_list/adblock_plus.txt",
     "https://cdn.jsdelivr.net/gh/uniartisan/adblock_list/adblock_privacy.txt",
-    "https://cdn.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/rule.txt"
+    "https://cdn.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/rule.txt",
+    "https://anti-ad.net/adguard.txt"
   ],
   "hiddenSettings": {},
   "whitelist": [
