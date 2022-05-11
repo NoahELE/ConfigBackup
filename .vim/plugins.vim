@@ -16,18 +16,14 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
-Plug 'raimondi/delimitmate'
-Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-fugitive'
+Plug 'easymotion/vim-easymotion'
 Plug 'airblade/vim-gitgutter'
 Plug 'liuchengxu/vim-which-key'
 call plug#end()
 
 " ayu
 let ayucolor = 'mirage'
-
-" rainbow
-let g:rainbow_active = 1
 
 " startify
 let g:startify_custom_header = startify#center([
