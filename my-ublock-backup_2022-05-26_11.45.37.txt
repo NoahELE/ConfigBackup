@@ -1,15 +1,13 @@
 {
-  "timeStamp": 1653523644549,
+  "timeStamp": 1653536737190,
   "version": "1.42.4",
   "userSettings": {
     "advancedUserEnabled": true,
     "cloudStorageEnabled": true,
     "uiAccentCustom0": "#309fa6",
-    "externalLists": "https://anti-ad.net/adguard.txt\nhttps://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adblock.txt\nhttps://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adguard.txt\nhttps://cdn.jsdelivr.net/gh/cjx82630/cjxlist/cjx-annoyance.txt\nhttps://cdn.jsdelivr.net/gh/uniartisan/adblock_list/adblock_plus.txt\nhttps://cdn.jsdelivr.net/gh/uniartisan/adblock_list/adblock_privacy.txt\nhttps://cdn.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/rule.txt\nhttps://winhelp2002.mvps.org/hosts.txt\nhttps://www.i-dont-care-about-cookies.eu/abp/",
+    "externalLists": "https://anti-ad.net/adguard.txt\nhttps://cdn.jsdelivr.net/gh/cjx82630/cjxlist/cjx-annoyance.txt\nhttps://cdn.jsdelivr.net/gh/uniartisan/adblock_list/adblock_plus.txt\nhttps://cdn.jsdelivr.net/gh/uniartisan/adblock_list/adblock_privacy.txt\nhttps://cdn.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/rule.txt\nhttps://winhelp2002.mvps.org/hosts.txt\nhttps://www.i-dont-care-about-cookies.eu/abp/",
     "importedLists": [
       "https://anti-ad.net/adguard.txt",
-      "https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adblock.txt",
-      "https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adguard.txt",
       "https://cdn.jsdelivr.net/gh/cjx82630/cjxlist/cjx-annoyance.txt",
       "https://cdn.jsdelivr.net/gh/uniartisan/adblock_list/adblock_plus.txt",
       "https://cdn.jsdelivr.net/gh/uniartisan/adblock_list/adblock_privacy.txt",
@@ -44,15 +42,13 @@
     "plowe-0",
     "CHN-0",
     "JPN-1",
-    "https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adblock.txt",
     "https://anti-ad.net/adguard.txt",
     "https://cdn.jsdelivr.net/gh/cjx82630/cjxlist/cjx-annoyance.txt",
     "https://www.i-dont-care-about-cookies.eu/abp/",
     "https://winhelp2002.mvps.org/hosts.txt",
     "https://cdn.jsdelivr.net/gh/uniartisan/adblock_list/adblock_plus.txt",
     "https://cdn.jsdelivr.net/gh/uniartisan/adblock_list/adblock_privacy.txt",
-    "https://cdn.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/rule.txt",
-    "https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/adguard.txt"
+    "https://cdn.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/rule.txt"
   ],
   "hiddenSettings": {},
   "whitelist": [
