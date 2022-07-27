@@ -26,40 +26,40 @@ call plug#end()
 let ayucolor = 'mirage'
 
 " startify
-let g:startify_custom_header = startify#center([
-      \ '███╗   ██╗ ██████╗  █████╗ ██╗  ██╗███████╗██╗     ███████╗',
-      \ '████╗  ██║██╔═══██╗██╔══██╗██║  ██║██╔════╝██║     ██╔════╝',
-      \ '██╔██╗ ██║██║   ██║███████║███████║█████╗  ██║     █████╗  ',
-      \ '██║╚██╗██║██║   ██║██╔══██║██╔══██║██╔══╝  ██║     ██╔══╝  ',
-      \ '██║ ╚████║╚██████╔╝██║  ██║██║  ██║███████╗███████╗███████╗',
-      \ '╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝',
-      \ ])
+let g:startify_custom_header = startify#center([ 
+        \'███╗   ██╗ ██████╗  █████╗ ██╗  ██╗███████╗██╗     ███████╗',
+        \'████╗  ██║██╔═══██╗██╔══██╗██║  ██║██╔════╝██║     ██╔════╝',
+        \'██╔██╗ ██║██║   ██║███████║███████║█████╗  ██║     █████╗  ',
+        \'██║╚██╗██║██║   ██║██╔══██║██╔══██║██╔══╝  ██║     ██╔══╝  ',
+        \'██║ ╚████║╚██████╔╝██║  ██║██║  ██║███████╗███████╗███████╗',
+        \'╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝',
+        \])
 
 " lightline
-let g:lightline = { 'colorscheme': 'PaperColor' }
+let g:lightline = { 'colorscheme': 'one' }
 
 " easymotion
 let g:EasyMotion_smartcase = 1
 
 " coc.nvim
 let g:coc_global_extensions = [
-      \ 'coc-explorer',
-      \ 'coc-lists',
-      \ 'coc-vimlsp',
-      \ 'coc-marketplace',
-      \ 'coc-snippets',
-      \ 'coc-json',
-      \ 'coc-xml',
-      \ 'coc-yaml',
-      \ 'coc-toml',
-      \ 'coc-html',
-      \ 'coc-pyright',
-      \ 'coc-java',
-      \ 'coc-tsserver',
-      \ 'coc-clangd',
-      \ 'coc-go',
-      \ 'coc-rust-analyzer',
-      \ ]
+        \'coc-explorer',
+        \'coc-lists',
+        \'coc-vimlsp',
+        \'coc-marketplace',
+        \'coc-snippets',
+        \'coc-json',
+        \'coc-xml',
+        \'coc-yaml',
+        \'coc-toml',
+        \'coc-html',
+        \'coc-pyright',
+        \'coc-java',
+        \'coc-tsserver',
+        \'coc-clangd',
+        \'coc-go',
+        \'coc-rust-analyzer',
+        \]
 
 set hidden
 set updatetime=300
@@ -103,77 +103,77 @@ call which_key#register('<space>', 'g:which_key_map')
 let g:which_key_map = {}
 
 let g:which_key_map.q = {
-        \ 'name': '+quit',
-        \ 'q': 'quit',
-        \ 'Q': 'force quiting',
-        \ 's': 'quit and save',
-        \ 'S': 'quit and save all',
-        \ }
+        \'name': '+quit',
+        \'q': 'quit',
+        \'Q': 'force quiting',
+        \'s': 'quit and save',
+        \'S': 'quit and save all',
+        \}
 
 let g:which_key_map.f = {
-        \ 'name': '+file',
-        \ 'e': 'open',
-        \ 'f': 'fuzzy find',
-        \ 'l': 'file tree',
-        \ 's': 'save current',
-        \ 'S': 'save all',
-        \ }
+        \'name': '+file',
+        \'e': 'open',
+        \'f': 'fuzzy find',
+        \'l': 'file tree',
+        \'s': 'save current',
+        \'S': 'save all',
+        \}
 
 let g:which_key_map.b = { 
-        \ 'name' : '+buffer',
-        \ 'b': 'list buffers',
-        \ 'd': 'delete buffer',
-        \ 'f': 'first buffer',
-        \ 'l': 'last buffer',
-        \ 'n': 'next buffer',
-        \ 'p': 'previous buffer',
-        \ 'h': 'home buffer',
-        \ '1': 'buffer 1',
-        \ '2': 'buffer 2',
-        \ '3': 'buffer 3',
-        \ '4': 'buffer 4',
-        \ '5': 'buffer 5',
-        \ '6': 'buffer 6',
-        \ '7': 'buffer 7',
-        \ '8': 'buffer 8',
-        \ '9': 'buffer 9',
-        \ }
+        \'name' : '+buffer',
+        \'b': 'list buffers',
+        \'d': 'delete buffer',
+        \'f': 'first buffer',
+        \'l': 'last buffer',
+        \'n': 'next buffer',
+        \'p': 'previous buffer',
+        \'h': 'home buffer',
+        \'1': 'buffer 1',
+        \'2': 'buffer 2',
+        \'3': 'buffer 3',
+        \'4': 'buffer 4',
+        \'5': 'buffer 5',
+        \'6': 'buffer 6',
+        \'7': 'buffer 7',
+        \'8': 'buffer 8',
+        \'9': 'buffer 9',
+        \}
 
 let g:which_key_map.t = {
-        \ 'name': '+tab',
-        \ 't': 'list tabs',
-        \ 'e': 'new tab',
-        \ 'd': 'close tab',
-        \ 'n': 'next tab',
-        \ 'p': 'previous tab',
-        \ 'f': 'first tab',
-        \ 'l': 'last tab',
-        \ }
+        \'name': '+tab',
+        \'t': 'list tabs',
+        \'e': 'new tab',
+        \'d': 'close tab',
+        \'n': 'next tab',
+        \'p': 'previous tab',
+        \'f': 'first tab',
+        \'l': 'last tab',
+        \}
 
 let g:which_key_map.w = {
-        \ 'name': '+window',
-        \ 'w': 'switch window',
-        \ 'h': 'navigate left',
-        \ 'l': 'navigate right',
-        \ 'j': 'navigate lower',
-        \ 'k': 'navigate upper',
-        \ 'n': 'new window',
-        \ 'c': 'close current window',
-        \ 'o': 'keep only current window',
-        \ 's': 'split horizontally',
-        \ 'v': 'split vertically',
-        \ '=': 'split equally',
-        \ 'J': 'decrease height by 10',
-        \ 'K': 'increase height by 10',
-        \ 'H': 'decrease width by 10',
-        \ 'L': 'increase width by 10',
-        \ }
+        \'name': '+window',
+        \'w': 'switch window',
+        \'h': 'navigate left',
+        \'l': 'navigate right',
+        \'j': 'navigate lower',
+        \'k': 'navigate upper',
+        \'n': 'new window',
+        \'c': 'close current window',
+        \'o': 'keep only current window',
+        \'s': 'split horizontally',
+        \'v': 'split vertically',
+        \'=': 'split equally',
+        \'J': 'decrease height by 10',
+        \'K': 'increase height by 10',
+        \'H': 'decrease width by 10',
+        \'L': 'increase width by 10',
+        \}
 
 let g:which_key_map.g = {
-        \ 'name': '+git',
-        \ }
+        \'name': '+git',
+        \}
 
 let g:which_key_map.h = {
-        \ 'name': '+hunk',
-        \ }
+        \'name': '+hunk',
+        \}
 

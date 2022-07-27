@@ -10,7 +10,7 @@ source ~/.vim/plugins.vim
 syntax on
 set termguicolors
 set background=dark
-colorscheme PaperColor
+colorscheme onedark
 filetype plugin indent on
 
 " appearance
@@ -18,6 +18,7 @@ set showmode
 set showcmd
 set number
 set ruler
+set cursorline
 set laststatus=2
 set scrolloff=3
 set noerrorbells
@@ -30,6 +31,9 @@ set fileencodings=ucs-bom,utf-8,gbk,big5,latin1
 set termencoding=utf-8
 
 " indent and tab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set autoindent
 set expandtab
 set smarttab
