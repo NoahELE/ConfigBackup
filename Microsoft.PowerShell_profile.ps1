@@ -46,3 +46,4 @@ Invoke-Expression (&{
 
 $env:FZF_DEFAULT_COMMAND = 'fd --type file --color always'
 $env:FZF_DEFAULT_OPTS = '--ansi --height 50% --preview "bat --style numbers --color always --line-range :500 {}"'
+$env:_ZO_FZF_OPTS = '--ansi --height 50% --preview "lsd --color always --icon always {2..}"'
