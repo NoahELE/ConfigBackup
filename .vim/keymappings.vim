@@ -1,8 +1,8 @@
 " keymappings
 let mapleader="\<space>"
 
-" use jj to replace esc
-inoremap jj <esc>
+" use jk to replace esc
+inoremap jk <esc>
 
 " which-key
 nnoremap <silent><leader> :WhichKey '<space>'<cr>
