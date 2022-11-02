@@ -58,6 +58,9 @@ set wildignorecase
 " mouse
 set mouse=a
 
+" timeout
+set timeoutlen=300
+
 " keymappings
 source ~/.vim/keymappings.vim
 

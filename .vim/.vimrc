@@ -62,6 +62,9 @@ set wildignorecase
 " mouse
 set mouse=a
 
+" timeout
+set timeoutlen=300
+
 " mode dependent caret
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
