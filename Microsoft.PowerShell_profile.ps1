@@ -11,17 +11,37 @@ Remove-Item alias:gl -Force
 Function ga {
     git add $args
 }
+
 Function gaa {
     git add --all $args
 }
+
 Function gc {
     git commit -v $args
 }
+
 Function gp {
     git push $args
 }
+
+Function gf {
+    git fetch $args
+}
+
 Function gl {
     git pull $args
+}
+
+Function gs {
+    git status $args
+}
+
+Function gss {
+    git status -s $args
+}
+
+Function gd {
+    git diff $args
 }
 
 Function proxy {
@@ -30,6 +50,7 @@ Function proxy {
     $env:HTTPS_PROXY="http://127.0.0.1:7890"
     (Invoke-WebRequest https://ip.gs/ip).Content
 }
+
 Function unproxy {
     Remove-Item env:ALL_PROXY
     Remove-Item env:HTTP_PROXY
