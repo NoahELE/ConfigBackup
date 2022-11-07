@@ -5,7 +5,7 @@ let mapleader="\<space>"
 inoremap jk <esc>
 
 " which-key
-nnoremap <silent><leader> :WhichKey '<space>'<cr>
+nnoremap <silent><leader> :WhichKey ' '<cr>
 
 " sneak
 nnoremap f <Plug>Sneak_f
@@ -82,4 +82,7 @@ nnoremap <leader>gw :Gwrite<cr>
 nnoremap <leader>ge :Gedit<cr>
 nnoremap <leader>ga :Git add .<cr>
 nnoremap <leader>gi :Git add -p %<cr>
+
+" noh
+nnoremap <leader>n :noh<cr>
 

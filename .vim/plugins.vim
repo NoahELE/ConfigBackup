@@ -1,6 +1,6 @@
 " vim-plug plugins
 call plug#begin('~/.vim/plugged')
-" appearance
+" theme
 Plug 'nlknguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
 Plug 'connorholyday/vim-snazzy'
@@ -21,6 +21,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'justinmk/vim-sneak'
 Plug 'airblade/vim-gitgutter'
 Plug 'liuchengxu/vim-which-key'
+Plug 'luochen1990/rainbow'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " ayu
@@ -106,12 +108,11 @@ nnoremap <silent> K :call <sid>show_documentation()<cr>
 nmap <f2> <plug>(coc-rename)
 
 " vim which key
-set timeoutlen=500 
-call which_key#register('<space>', 'g:which_key_map')
+call which_key#register(' ', 'g:which_key_map')
 
 let g:which_key_map = {}
 
-let g:which_key_map.q = {
+let g:which_key_map['q'] = {
         \'name': '+quit',
         \'q': 'quit',
         \'Q': 'force quiting',
@@ -119,7 +120,7 @@ let g:which_key_map.q = {
         \'S': 'quit and save all',
         \}
 
-let g:which_key_map.f = {
+let g:which_key_map['f'] = {
         \'name': '+file',
         \'e': 'open',
         \'f': 'fuzzy find',
@@ -128,7 +129,7 @@ let g:which_key_map.f = {
         \'S': 'save all',
         \}
 
-let g:which_key_map.b = { 
+let g:which_key_map['b'] = { 
         \'name' : '+buffer',
         \'b': 'list buffers',
         \'d': 'delete buffer',
@@ -148,7 +149,7 @@ let g:which_key_map.b = {
         \'9': 'buffer 9',
         \}
 
-let g:which_key_map.t = {
+let g:which_key_map['t'] = {
         \'name': '+tab',
         \'t': 'list tabs',
         \'e': 'new tab',
@@ -159,7 +160,7 @@ let g:which_key_map.t = {
         \'l': 'last tab',
         \}
 
-let g:which_key_map.w = {
+let g:which_key_map['w'] = {
         \'name': '+window',
         \'w': 'switch window',
         \'h': 'navigate left',
@@ -178,11 +179,11 @@ let g:which_key_map.w = {
         \'L': 'increase width by 10',
         \}
 
-let g:which_key_map.g = {
+let g:which_key_map['g'] = {
         \'name': '+git',
         \}
 
-let g:which_key_map.h = {
+let g:which_key_map['h'] = {
         \'name': '+hunk',
         \}
 
