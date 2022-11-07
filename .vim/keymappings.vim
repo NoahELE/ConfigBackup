@@ -1,5 +1,5 @@
 " keymappings
-let mapleader="\<space>"
+let mapleader=" "
 
 " use jk to replace esc
 inoremap jk <esc>
