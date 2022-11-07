@@ -4,6 +4,9 @@ let mapleader="\<space>"
 " use jk to replace esc
 inoremap jk <esc>
 
+" noh
+nnoremap <silent><backspace> :noh<cr>
+
 " which-key
 nnoremap <silent><leader> :WhichKey ' '<cr>
 
@@ -82,7 +85,4 @@ nnoremap <leader>gw :Gwrite<cr>
 nnoremap <leader>ge :Gedit<cr>
 nnoremap <leader>ga :Git add .<cr>
 nnoremap <leader>gi :Git add -p %<cr>
-
-" noh
-nnoremap <leader>n :noh<cr>
 
