@@ -3,18 +3,13 @@ let mapleader=" "
 
 " use jk to replace esc
 inoremap jk <esc>
+inoremap kj <esc>
 
 " noh
 nnoremap <silent><backspace> :noh<cr>
 
 " which-key
 nnoremap <silent><leader> :WhichKey ' '<cr>
-
-" sneak
-nnoremap f <Plug>Sneak_f
-nnoremap F <Plug>Sneak_F
-nnoremap t <Plug>Sneak_t
-nnoremap T <Plug>Sneak_T
 
 " quit
 nnoremap <leader>qq :q<cr>
