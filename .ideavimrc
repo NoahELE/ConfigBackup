@@ -3,6 +3,7 @@ let mapleader="\<Space>"
 set surround
 set commentary
 set easymotion
+set sneak
 
 set clipboard
 set ideajoin
@@ -14,6 +15,41 @@ set smartcase
 set showmode
 set showcmd
 set scrolloff=3
+set timeoutlen=300
 
 " use jj to replace esc
-inoremap jj <Esc>
+inoremap jk <Esc>
+inoremap kj <Esc>
+
+" set ide shortcuts
+sethandler <C-2> a:ide
+sethandler <C-S-2> a:ide
+sethandler <C-S-6> a:ide
+sethandler <C-;> a:ide
+sethandler <C-S-;> a:ide
+sethandler <C-A> a:ide
+sethandler <C-B> a:ide
+sethandler <C-C> a:ide
+sethandler <C-D> a:ide
+sethandler <C-E> a:ide
+sethandler <C-F> a:ide
+sethandler <C-G> a:ide
+sethandler <C-H> a:ide
+sethandler <C-I> a:ide
+sethandler <C-J> a:ide
+sethandler <C-K> a:ide
+sethandler <C-L> a:ide
+sethandler <C-M> a:ide
+sethandler <C-N> a:ide
+sethandler <C-O> a:ide
+sethandler <C-P> a:ide
+sethandler <C-R> a:ide
+sethandler <C-S> a:ide
+sethandler <C-T> a:ide
+sethandler <C-U> a:ide
+sethandler <C-V> a:ide
+sethandler <C-W> a:ide
+sethandler <C-X> a:ide
+sethandler <C-[> a:ide
+sethandler <C-\> a:ide
+sethandler <C-]> a:ide
